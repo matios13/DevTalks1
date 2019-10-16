@@ -1,8 +1,8 @@
 package uk.co.eclipsegroup;
 
 public class Beer {
-    private String name;
-    private Double price;
+    private final String name;
+    private final Double price;
 
     public Beer(String name, Double price) {
         this.name = name;
