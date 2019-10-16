@@ -5,5 +5,7 @@ public class Task2 {
         for(Beer beer : Bar.beers){
             System.out.println(beer.getName());
         }
+        Bar.beers.forEach(b-> System.out.println(b.getName()));
+        Bar.beers.stream().map(Beer::getName).forEach(System.out::println);
     }
 }
